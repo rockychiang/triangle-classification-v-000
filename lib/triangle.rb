@@ -7,7 +7,7 @@ class Triangle
     if @side[0] + @side[1] > @side[2]
       if @side.uniq.count == 1
         :equilateral
-      elsif @side[0] == @side[1] || @side[1] == @side[2]
+      elsif @side.uniq.count == 2
         :isosceles
       else
         :scalene
